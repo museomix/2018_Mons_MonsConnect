@@ -30,7 +30,7 @@ void setup() {
   size(1280, 720);
   fill(255, 0, 0);
   kinect.setMirror(true);
-  video = new Capture(this, videoWidth, videoHeight, Capture.list()[1]);
+  video = new Capture(this, videoWidth, videoHeight);
 
   // Step 4. Start the capturing process.
   video.start();
