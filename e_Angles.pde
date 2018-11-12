@@ -7,7 +7,7 @@ float fAngle;
 float gAngle;
 float hAngle;
 float angleRange = 25;
-float minimumCheckScore = 5;
+float minimumCheckScore = 3;
 
 void getAngles() {
   aAngle = getAngle("a");
@@ -20,48 +20,51 @@ void getAngles() {
   hAngle = getAngle("h");
 }
 
-void checkAngles() {
+boolean checkAngles() {
+  //Angles retrieval
+  getAngles();
+
+  //Score is set to 0 before iteration on every angle
   int score = 0;
-  for (int i = 0; i<charactersNumber; i++) {
-    Character character = characters[i];
-    int angles[] = character.angles;
-    //println("Angle A" + aAngle);
-    //   println("Range low =" + (angles[0] - angleRange));
-    //   println("Range high =" + (angles[0] + angleRange));
 
-    if (aAngle > (angles[0] - angleRange) && aAngle < (angles[0] + angleRange)) {
-      score++;
-    }
-    if (bAngle > (angles[1] - angleRange) && bAngle < (angles[1] + angleRange)) {
-      score++;
-    }
-    if (cAngle > (angles[2] - angleRange) && cAngle < (angles[2] + angleRange)) {
-      score++;
-    }
-    if (dAngle > (angles[3] - angleRange) && dAngle < (angles[3] + angleRange)) {
-      score++;
-    }
-    if (eAngle > (angles[4] - angleRange) && eAngle < (angles[4] + angleRange)) {
-      score++;
-    }
-    if (fAngle > (angles[5] - angleRange) && fAngle < (angles[5] + angleRange)) {
-      score++;
-    }
-    if (gAngle > (angles[6] - angleRange) && gAngle < (angles[6] + angleRange)) {
-      score++;
-    }
-    if (hAngle > (angles[7] - angleRange) && hAngle < (angles[7] + angleRange)) {
-      score++;
-    }
+  //Character data retrieval
+  Character character = characters[currentCharacter];
+  int angles[] = character.angles;
 
-    if (score >= minimumCheckScore) {
-      textSize(36);
-      text("YOU ARE : " + character.name, 100, 100);
-    }
+  //Angles check (TO REWRITE IN A MORE GENERIC WAY)
+  if (aAngle > (angles[0] - angleRange) && aAngle < (angles[0] + angleRange)) {
+    score++;
   }
+  if (bAngle > (angles[1] - angleRange) && bAngle < (angles[1] + angleRange)) {
+    score++;
+  }
+  if (cAngle > (angles[2] - angleRange) && cAngle < (angles[2] + angleRange)) {
+    score++;
+  }
+  if (dAngle > (angles[3] - angleRange) && dAngle < (angles[3] + angleRange)) {
+    score++;
+  }
+  if (eAngle > (angles[4] - angleRange) && eAngle < (angles[4] + angleRange)) {
+    score++;
+  }
+  if (fAngle > (angles[5] - angleRange) && fAngle < (angles[5] + angleRange)) {
+    score++;
+  }
+  if (gAngle > (angles[6] - angleRange) && gAngle < (angles[6] + angleRange)) {
+    score++;
+  }
+  if (hAngle > (angles[7] - angleRange) && hAngle < (angles[7] + angleRange)) {
+    score++;
+  }
+
+  //Score threadsold check
+  if (score >= minimumCheckScore) {
+    return true;
+  }
+  return false;
 }
 
-//Generate the angle
+//Get angle between two vectors
 float angleOf(PVector one, PVector two, PVector axis) {
 
   PVector limb = PVector.sub(two, one);
