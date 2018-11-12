@@ -43,7 +43,6 @@ float getAngle(String code) {
 
 void displayAngles() {
   textSize(26);
-  text("Angle A : " + int(getAngle("a")), 20, 20);
 } 
 
 
