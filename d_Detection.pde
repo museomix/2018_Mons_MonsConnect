@@ -16,7 +16,7 @@ void startDetection(SimpleOpenNI kinectObject) {
 
       //Vectors will be needed to get the angles of the user, to match characters
       initializeVectors(userId, kinectObject);
-      
+
       //if angles are OK, player won
       boolean anglesCheckResult = checkAngles();
       if (anglesCheckResult) {

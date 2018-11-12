@@ -8,7 +8,7 @@ void loadCharacters() {
   JSONArray characterData = json.getJSONArray("characters");
 
   characters = new Character[characterData.size()]; 
-  
+
   //Characters array is populated by "Character" class instance
   for (int i = 0; i < characterData.size (); i++) {
     JSONObject character = characterData.getJSONObject(i);
