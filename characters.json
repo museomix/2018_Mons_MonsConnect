@@ -11,7 +11,9 @@
 			"g" : 160,
 			"h" : 180,
         },
-        "name": "Un ours"
+        "name": "Les baigneurs",
+		"maskFile" : "masks/1pochoir",
+		"endFile" : "ends/ecrandefin-01"
       },
 	  {
         "angles": {
@@ -24,7 +26,24 @@
 			"g" : 90,
 			"h" : 150,
         },
-        "name": "Un oiseau"
+        "name": "Les bêcheurs",
+		"maskFile" : "masks/2pochoir",
+		"endFile" : "ends/ecrandefin-02"
+      },
+	   {
+        "angles": {
+			"a" : 20,
+			"b" : 180,
+			"c" : 85,
+			"d" : 40,
+			"e" : 90,
+			"f" : 180,
+			"g" : 90,
+			"h" : 150,
+        },
+        "name": "Les bêcheurs",
+		"maskFile" : "masks/3pochoir",
+		"endFile" : "ends/ecrandefin-02"
       }
     ]
 }
