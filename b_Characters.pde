@@ -1,21 +1,19 @@
 Character[] characters;
 int charactersNumber;
-JSONObject json;
 
+//Load characters from JSON file
 void loadCharacters() {
-  // Load JSON file
-  // Temporary full path until path problem resolved.
-  json = loadJSONObject("characters.json");
+  JSONObject json = loadJSONObject("characters.json");
 
   JSONArray characterData = json.getJSONArray("characters");
 
-  // The size of the array of Bubble objects is determined by the total XML elements named "bubble"
   characters = new Character[characterData.size()]; 
-
+  
+  //Characters array is populated by "Character" class instance
   for (int i = 0; i < characterData.size (); i++) {
-    // Get each object in the array
-    JSONObject character = characterData.getJSONObject(i); 
-    // Get a position object
+    JSONObject character = characterData.getJSONObject(i);
+    String maskFile = character.getString("maskFile");
+    String endFile = character.getString("endFile");
     JSONObject anglesData = character.getJSONObject("angles");
     int angles[] = new int[8];
     angles[0] = anglesData.getInt("a");
@@ -26,7 +24,7 @@ void loadCharacters() {
     angles[5] = anglesData.getInt("f");
     angles[6] = anglesData.getInt("g");
     angles[7] = anglesData.getInt("h");
-    characters[i] = new Character(character.getString("name"), angles);
+    characters[i] = new Character(character.getString("name"), angles, maskFile, endFile);
     charactersNumber++;
   }
 }
