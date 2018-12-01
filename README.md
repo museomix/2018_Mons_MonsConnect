@@ -1,7 +1,3 @@
----
-typora-root-url: ./
----
-
 # MonsConnect
 
 [English version below](#anchors-in-markdown)
@@ -16,5 +12,5 @@ Oeuvre(s) sélectionnée(e)s
 
 Le BAM acceuillant en novembre 2018 une exposition de Niki de Saint Phalle, il a été décidé d'utiliser l'oeuvre "Les Baigneurs" comme sujet de notre prototype.
 
-![les_baigneurs](doc\images\les_baigneurs.jpg)
+![les_baigneurs](doc/images/les_baigneurs.jpg)
 
