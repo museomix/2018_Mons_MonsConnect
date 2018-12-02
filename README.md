@@ -2,6 +2,8 @@
 
 [English version below](#anchors-in-markdown)
 
+![](doc/images/logo.png)
+
 Ce projet a été créé lors de l'édition 2019 de Museomix, et plus particlièrement au BAM, à Mons, en Belgique (qui fait partie Pôle Muséal de la Ville, qui compte 11 sites en tout).
 
 ## Terrain de jeu
@@ -32,8 +34,6 @@ Le scénario de base était le suivant :
 - le "jeu" se relance, avec une autre œuvre
 
 ## Quelques visuels
-
-
 
 ## Matériel
 
