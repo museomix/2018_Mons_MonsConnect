@@ -33,6 +33,16 @@ Le scénario de base était le suivant :
 - en essayant via ses mouvements de coller à la forme du pochoir présent à l'écran, la personne "gagne" et il lui est indiqué à quelle œuvre il ou elle a ressemblé, et dans quel musée la trouver
 - le "jeu" se relance, avec une autre œuvre
 
+Quelques photos
+
+|                   Design en cours                    |        Premier jet du prototype         |
+| :--------------------------------------------------: | :-------------------------------------: |
+| ![designer_wip](doc/photos/gallery/designer_wip.jpg) | ![](doc/photos/gallery/first_proto.jpg) |
+|                  **Premiers tests**                  |          **Prototype complet**          |
+|         ![](doc/photos/gallery/far_view.jpg)         |  ![](doc/photos/gallery/example1.jpg)   |
+
+
+
 ## Eléments visuels
 
 | **Masque animé indiquant la forme à reproduire** |          **Exemple d'écran de fin**           |
