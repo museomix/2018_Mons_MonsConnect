@@ -51,7 +51,35 @@ Le scénario de base était le suivant :
 
 ## Principe technique
 
+La Kinect pouvant mesurer les angles entre les parties du corps, l'équipe a constitué une banque de coordonnées pour les différentes œuvres.
 
+La nomenclature des angles est la suivante :
+
+![](doc/images/skeleton.jpg)
+
+Le stockage se fait sous forme d'un fichier JSON ayant le format suivant :
+
+```json
+{"characters": [
+      {
+        "angles": {
+			"a" : 80,
+			"b" : 150,
+			"c" : 80,
+			"d" : 130,
+			"e" : 140,
+			"f" : 180,
+			"g" : 160,
+			"h" : 180,
+        },
+        "name": "Les baigneurs",
+		"maskFile" : "masks/1pochoir",
+		"endFile" : "ends/ecrandefin-01"
+      }
+]}
+```
+
+A chaque boucle réalisée par Processing, on vérifie via la fonction `checkAngles()`si chaque angle mesuré via la Kinect correspond à l'angle indiqué dans une des oeuvres (avec une grosse marge d'erreur vu la résolution de l'appareil), et si oui, on affiche alors le fichier de "fin" correspondant.
 
 ## Utilisation
 
