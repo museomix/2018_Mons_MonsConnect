@@ -33,7 +33,7 @@ Le scénario de base était le suivant :
 - en essayant via ses mouvements de coller à la forme du pochoir présent à l'écran, la personne "gagne" et il lui est indiqué à quelle œuvre il ou elle a ressemblé, et dans quel musée la trouver
 - le "jeu" se relance, avec une autre œuvre
 
-Quelques photos
+## Quelques photos
 
 |                   Design en cours                    |        Premier jet du prototype         |
 | :--------------------------------------------------: | :-------------------------------------: |
