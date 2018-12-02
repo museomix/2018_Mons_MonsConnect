@@ -35,6 +35,10 @@ Le scénario de base était le suivant :
 
 ## Quelques visuels
 
+| **Masque indiquant la forme à reproduire** |                **Exemple d'écran de fin**                |
+| :----------------------------------------: | :------------------------------------------------------: |
+|       ![Masque](doc/images/mask.png)       | ![Exemple d'écran de fin](assets/ends/ecrandefin-06.jpg) |
+
 ## Matériel
 
 - Kinect v1 (modèle 1414)
