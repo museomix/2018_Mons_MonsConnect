@@ -33,11 +33,13 @@ Le scénario de base était le suivant :
 - en essayant via ses mouvements de coller à la forme du pochoir présent à l'écran, la personne "gagne" et il lui est indiqué à quelle œuvre il ou elle a ressemblé, et dans quel musée la trouver
 - le "jeu" se relance, avec une autre œuvre
 
-## Quelques visuels
+## Eléments visuels
 
-| **Masque indiquant la forme à reproduire** |                **Exemple d'écran de fin**                |
-| :----------------------------------------: | :------------------------------------------------------: |
-|       ![Masque](doc/images/mask.png)       | ![Exemple d'écran de fin](assets/ends/ecrandefin-06.jpg) |
+| **Masque animé indiquant la forme à reproduire** |          **Exemple d'écran de fin**           |
+| :----------------------------------------------: | :-------------------------------------------: |
+|          ![Masque](doc/images/mask.png)          | ![Exemple d'écran de fin](doc/images/end.jpg) |
+|            **Animation de démarrage**            |                                               |
+|        ![startup](doc/images/startup.png)        |                                               |
 
 ## Matériel
 
@@ -90,3 +92,10 @@ A chaque boucle réalisée par Processing, on vérifie via la fonction `checkAng
 * ouvrir le fichier **MonsConnect.pde** dans *Processing*
 * utiliser le raccourci Ctrl + R pour lancer le projet
 
+## L'équipe
+
+![team](doc/photos/team.jpg)
+
+| Nathalie Cimino | Samy Rabih  | Claire Allard | Maëlle Stasser | Ling Wang | Eslam Nofal | Vinciane Godfrind |
+| :-------------: | :---------: | :-----------: | :------------: | :-------: | :---------: | :---------------: |
+|    Médiation    | Développeur | Facilitatrice |  Communicante  | Designer  |    Maker    |     Contenus      |
